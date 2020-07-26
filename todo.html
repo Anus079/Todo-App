@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-App</title>
+</head>
+
+<style>
+    body{text-align: center;justify-content: center;}
+    .Input-1{ 
+        border: 1px solid black ;
+        border-radius: 1rem;
+        
+    }
+    .Dlt-btn{
+        border: 1px solid black;
+        border-radius: 5px 5px  ;
+    }
+    .btn{
+        font-weight: bold;
+        
+    }
+
+</style>
+<body>
+    
+    <div class="main">
+        <input type="text" placeholder="Enter Todo Items" class="Input-1" id="todo-inner">
+        <button onclick="addtodo()" class="btn">ADD ITEM</button>
+        <button onclick="DeleteAll()" class="btn"> Delete All</button>
+    </div>
+    <div>
+        <ul id="todo-list">
+
+        </ul>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
