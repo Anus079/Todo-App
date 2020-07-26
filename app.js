@@ -2,13 +2,20 @@ var todolist = document.getElementById("todo-list");
 
 function addtodo(){
     var todoitems = document.getElementById("todo-inner");
+    if( todoitems.value === ""){
+        alert("No empty notes Allowed");
+        // todolist.innerHTML = ""
+    }else if(todoitems.value === ""){
+        // li.innerHTML.value = ""
+    }
 
     // Create Li tag from Javascript
     var li = document.createElement('li');
     var litext = document.createTextNode(todoitems.value);
     li.appendChild(litext);
     todolist.appendChild(li)
-    todoitems.value = ""
+    todoitems.value = "";
+    li.setAttribute(("class"),("todo-list"))
     
     // Create Button tag from Javascript
     
@@ -27,7 +34,8 @@ function addtodo(){
     var edittext = document.createTextNode("EDIT")
     editbtn.appendChild(edittext)
     li.appendChild(editbtn)
-    editbtn.setAttribute(("class"),("Dlt-btn"))
+    editbtn.setAttribute(("class"),("Dlt-btn"));
+    editbtn.setAttribute(("id"),("Edit-btn"));
     editbtn.setAttribute(("Onclick"),("Edititem(this)"))
 }
 

@@ -4,31 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-App</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 </head>
-
-<style>
-    body{text-align: center;justify-content: center;}
-    .Input-1{ 
-        border: 1px solid black ;
-        border-radius: 1rem;
-        
-    }
-    .Dlt-btn{
-        border: 1px solid black;
-        border-radius: 5px 5px  ;
-    }
-    .btn{
-        font-weight: bold;
-        
-    }
-
-</style>
-<body>
-    
+<body id="body">
+    <div class="heading">
+        <h1>todo app</h1>
+    </div>
     <div class="main">
         <input type="text" placeholder="Enter Todo Items" class="Input-1" id="todo-inner">
-        <button onclick="addtodo()" class="btn">ADD ITEM</button>
-        <button onclick="DeleteAll()" class="btn"> Delete All</button>
+        <button onclick="addtodo()" class="btn btn-1"><i class="fa  fa-plus-square" aria-hidden="true"></i>
+
+        </button>
+        <button onclick="DeleteAll()" class="btn btn-1"> <i class="fa fa-trash" aria-hidden="true"></i>
+        </button>
     </div>
     <div>
         <ul id="todo-list">

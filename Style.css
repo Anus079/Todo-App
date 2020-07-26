@@ -1,0 +1,71 @@
+body{
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: thistle;
+
+}
+.todo-list{
+    text-decoration: none;
+    margin: 20px 20px;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 50px;
+    color: teal;
+    box-shadow: 0px 3px 2px 4px;
+    font-size: 20px;
+    /* background-color: teal; */
+
+}
+.main{
+    text-align: center;
+    margin: 30px 0;
+}
+    .Input-1{ 
+        border: 1px solid black ;
+         width: 450px;
+        height: 40px;
+        text-align: center;
+        
+    }
+    .Dlt-btn{
+        border: 1px solid black;
+        border-radius: 5px 5px  ;
+        font-weight: bold;
+        padding: 10px;
+        display: flex;
+        float: right;
+        background-color: teal;
+        color: #ffffff;
+    }
+    #Edit-btn{
+        /* margin: 0px 4px; */
+        margin-right: 10px;
+        border: 1px solid black;
+        border-radius: 5px 5px  ;
+        font-weight: bold;
+        padding: 10px;
+        display: flex;
+        float: right;
+    }
+    .btn-1{
+        font-size: 20px;
+        box-sizing: border-box;
+        width: 70px;
+        /* height: 1px; */
+    }
+    .btn{
+        font-weight: bold;
+        background-color: teal;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 1rem;
+        color: #ffffff;
+        
+    }
